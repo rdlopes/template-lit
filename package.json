@@ -8,8 +8,7 @@
     "start": "vite",
     "build": "npm run wca && vite build",
     "test": "web-test-runner",
-    "storybook": "npm run wca && start-storybook -p 6006",
-    "docs": "tsc && npm run wca && build-storybook -o ./docs"
+    "storybook": "npm run wca && start-storybook -p 6006"
   },
   "keywords": [],
   "author": "",

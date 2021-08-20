@@ -11,13 +11,19 @@ describe('Footer', async () => {
     `);
   });
 
+  it('passes the a11y audit', async () => {
+    await expect(element).shadowDom.to.be.accessible();
+  });
+
   it('has a divider', () => {
     const divider = element.shadowRoot!.querySelector('wl-divider')!;
     expect(divider).to.exist;
   });
 
-  it('passes the a11y audit', async () => {
-    await expect(element).shadowDom.to.be.accessible();
+  it('footer can be clicked', () => {
+    const currentLocation = window.location.href;
+    element.shadowRoot!.querySelector('wl-button')!.click();
+    expect(window.location.href).to.equal(`${currentLocation}#`);
   });
 
 });

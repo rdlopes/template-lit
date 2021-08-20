@@ -1,7 +1,7 @@
 import {expect, fixture, html} from '@open-wc/testing';
 
 import {NavbarAtom} from "./navbar.atom";
-import './footer.atom';
+import './navbar.atom';
 
 describe('Navbar', async () => {
   let element: NavbarAtom;
