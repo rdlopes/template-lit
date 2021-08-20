@@ -1,0 +1,71 @@
+{
+  "name": "template-lit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wca": "web-component-analyzer analyze src --outFile custom-elements.json",
+    "start": "vite",
+    "build": "npm run wca && vite build",
+    "test": "web-test-runner",
+    "storybook": "npm run wca && start-storybook -p 6006",
+    "docs": "tsc && npm run wca && build-storybook -o ./docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^2.0.0-rc.2",
+    "sass": "^1.38.0",
+    "weightless": "0.0.37"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@open-wc/eslint-config": "^4.3.0",
+    "@open-wc/testing": "^2.5.33",
+    "@storybook/addon-actions": "^6.4.0-alpha.30",
+    "@storybook/addon-essentials": "^6.4.0-alpha.30",
+    "@storybook/addon-links": "^6.4.0-alpha.30",
+    "@storybook/addons": "^6.3.7",
+    "@storybook/theming": "^6.3.7",
+    "@storybook/web-components": "^6.4.0-alpha.30",
+    "@types/node": "^16.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "@web/dev-server-esbuild": "^0.2.14",
+    "@web/test-runner": "^0.13.16",
+    "@web/test-runner-commands": "^0.5.11",
+    "@web/test-runner-playwright": "^0.8.8",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "storybook-builder-vite": "0.0.12",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5",
+    "vite": "^2.5.0",
+    "web-component-analyzer": "^1.1.6"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "@open-wc/eslint-config"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ],
+      "import/no-unresolved": "off",
+      "import/extensions": [
+        "error",
+        "always",
+        {
+          "ignorePackages": true
+        }
+      ]
+    }
+  }
+}
