@@ -13,41 +13,44 @@ export interface FooterAtomProperties {
 export class FooterAtom extends LitElement implements FooterAtomProperties {
 
   static styles = css`
-      :host {
-        display: block;
-        --icon-size: 12px;
-        --button-font-size: 12px;
-      }
+    :host {
+      display: block;
+      --icon-size: 12px;
+      --button-font-size: 12px;
+    }
 
-      #banner {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        gap: 1rem;
-      }
+    #banner {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 1rem;
+    }
 
-      #heart {
-        color: #B30000;
-      }
-    `
+    #heart {
+      color: #B30000;
+    }
+  `
 
   @property({type: String})
-  author: string = 'a dev'
+  author: string = 'your dev'
 
   @property({type: String})
   link: string = '#'
 
   render() {
     return html`
-            <wl-divider></wl-divider>
-            <wl-banner>
-                <wl-button id="banner" flat inverted @click="${this.onClick}">
-                    <code>/* crafted with </code>
-                    <wl-icon id="heart">favorite</wl-icon>
-                    <code>by ${this.author} */</code>
-                </wl-button>
-            </wl-banner>
-        `
+      <wl-divider></wl-divider>
+      <wl-banner>
+        <wl-button id="banner"
+                   @click="${this.onClick}"
+                   flat inverted
+        >
+          <code>/* crafted with </code>
+          <wl-icon id="heart">favorite</wl-icon>
+          <code>by ${this.author} */</code>
+        </wl-button>
+      </wl-banner>
+    `
   }
 
   private onClick() {

@@ -4,13 +4,13 @@ import './navbar.atom';
 import {NavbarAtomProperties} from "./navbar.atom";
 
 export default {
-  title: 'Atoms / Navigation Bar',
+  title: 'Atoms / Navigation',
   component: 'navbar-atom',
   argTypes: {},
 } as Meta;
 
 const Template: Story<NavbarAtomProperties> = ({brand}: NavbarAtomProperties) => html`
-    <navbar-atom .brand="${brand}"></navbar-atom>
+  <navbar-atom .brand="${brand}"></navbar-atom>
 `;
 
 export const Light: Story<NavbarAtomProperties> = Template.bind({});
