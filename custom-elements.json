@@ -1,0 +1,86 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "footer-atom",
+      "path": "./src/atoms/footer/footer.atom.ts",
+      "attributes": [
+        {
+          "name": "author",
+          "type": "string",
+          "default": "\"your dev\""
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "default": "\"#\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\n    :host {\\n      display: block;\\n      --icon-size: 12px;\\n      --button-font-size: 12px;\\n    }\\n\\n    #banner {\\n      display: flex;\\n      width: 100%;\\n      align-items: center;\\n      gap: 1rem;\\n    }\\n\\n    #heart {\\n      color: #B30000;\\n    }\\n  `\""
+        },
+        {
+          "name": "author",
+          "attribute": "author",
+          "type": "string",
+          "default": "\"your dev\""
+        },
+        {
+          "name": "link",
+          "attribute": "link",
+          "type": "string",
+          "default": "\"#\""
+        }
+      ]
+    },
+    {
+      "name": "navbar-atom",
+      "path": "./src/atoms/navbar/navbar.atom.ts",
+      "attributes": [
+        {
+          "name": "brand",
+          "type": "string",
+          "default": "\"App template\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\n      :host {\\n        display: block;\\n      }\\n    `\""
+        },
+        {
+          "name": "brand",
+          "attribute": "brand",
+          "type": "string",
+          "default": "\"App template\""
+        }
+      ]
+    },
+    {
+      "name": "main-molecule",
+      "path": "./src/molecules/main/main.molecule.ts",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\n      :host {\\n        display: block;\\n      }\\n    `\""
+        }
+      ]
+    },
+    {
+      "name": "home-page",
+      "path": "./src/pages/home/home.page.ts",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\n    :host {\\n      flex: 1;\\n      display: flex;\\n      flex-direction: column;\\n      gap: 1rem;\\n    }\\n\\n    main {\\n      flex: 1;\\n      margin: 1rem 2rem;\\n      display: flex;\\n      justify-content: center;\\n      align-items: center;\\n    }\\n\\n    #main-content {\\n      max-width: 800px;\\n    }\\n  `\""
+        }
+      ]
+    }
+  ]
+}
