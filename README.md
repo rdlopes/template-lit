@@ -2,7 +2,7 @@
 
 - `npm init -y`
 - `npm i -D vite typescript tslib @types/node web-component-analyzer`
-- `npm i lit weightless`
+- `npm i lit sass weightless`
 - `npx sb@next init --builder storybook-builder-vite`
 - `npm i -D @storybook/addons @storybook/theming`
 - `npm i -D eslint @open-wc/eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin`
