@@ -35,7 +35,7 @@
     "@web/dev-server-esbuild": "^0.2.14",
     "@web/test-runner": "^0.13.16",
     "@web/test-runner-commands": "^0.5.11",
-    "@web/test-runner-playwright": "^0.8.8",
+    "@web/test-runner-playwright": "^0.9.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
     "storybook-builder-vite": "0.0.12",
