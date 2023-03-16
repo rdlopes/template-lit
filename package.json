@@ -32,7 +32,7 @@
     "@types/node": "^16.6.2",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
-    "@web/dev-server-esbuild": "^0.2.14",
+    "@web/dev-server-esbuild": "^0.3.0",
     "@web/test-runner": "^0.13.16",
     "@web/test-runner-commands": "^0.6.0",
     "@web/test-runner-playwright": "^0.9.0",
