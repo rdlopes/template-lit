@@ -41,7 +41,7 @@
     "storybook-builder-vite": "0.0.12",
     "tslib": "^2.3.1",
     "typescript": "^5.0.0",
-    "vite": "^2.5.0",
+    "vite": "^4.0.0",
     "web-component-analyzer": "^1.1.6",
     "web-types-lit": "^0.1.0"
   },
