@@ -36,7 +36,7 @@
     "@web/test-runner": "^0.15.0",
     "@web/test-runner-commands": "^0.6.0",
     "@web/test-runner-playwright": "^0.9.0",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^9.0.0",
     "eslint": "^7.32.0",
     "storybook-builder-vite": "0.0.12",
     "tslib": "^2.3.1",
