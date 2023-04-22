@@ -43,6 +43,24 @@
     },
     {
       "kind": "javascript-module",
+      "path": "coverage/lcov-report/block-navigation.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/lcov-report/prettify.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/lcov-report/sorter.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "storybook-static/assets/Color-3YIJY6X7-6f988023.js",
       "declarations": [
         {
@@ -4178,84 +4196,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/atoms/footer/footer.atom.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "FooterAtom",
-          "members": [
-            {
-              "kind": "field",
-              "name": "author",
-              "type": {
-                "text": "string"
-              },
-              "default": "'your dev'",
-              "attribute": "author"
-            },
-            {
-              "kind": "field",
-              "name": "link",
-              "type": {
-                "text": "string"
-              },
-              "default": "'#'",
-              "attribute": "link"
-            },
-            {
-              "kind": "method",
-              "name": "onClick",
-              "privacy": "private"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "author",
-              "type": {
-                "text": "string"
-              },
-              "default": "'your dev'",
-              "fieldName": "author"
-            },
-            {
-              "name": "link",
-              "type": {
-                "text": "string"
-              },
-              "default": "'#'",
-              "fieldName": "link"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "footer-atom",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "FooterAtom",
-          "declaration": {
-            "name": "FooterAtom",
-            "module": "src/atoms/footer/footer.atom.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "footer-atom",
-          "declaration": {
-            "name": "FooterAtom",
-            "module": "src/atoms/footer/footer.atom.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/atoms/navbar/navbar.atom.ts",
       "declarations": [
         {
@@ -4342,6 +4282,84 @@
           "declaration": {
             "name": "MainMolecule",
             "module": "src/molecules/main/main.molecule.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/atoms/footer/footer.atom.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "FooterAtom",
+          "members": [
+            {
+              "kind": "field",
+              "name": "author",
+              "type": {
+                "text": "string"
+              },
+              "default": "'your dev'",
+              "attribute": "author"
+            },
+            {
+              "kind": "field",
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "default": "'#'",
+              "attribute": "link"
+            },
+            {
+              "kind": "method",
+              "name": "onClick",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "author",
+              "type": {
+                "text": "string"
+              },
+              "default": "'your dev'",
+              "fieldName": "author"
+            },
+            {
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "default": "'#'",
+              "fieldName": "link"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "footer-atom",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FooterAtom",
+          "declaration": {
+            "name": "FooterAtom",
+            "module": "src/atoms/footer/footer.atom.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "footer-atom",
+          "declaration": {
+            "name": "FooterAtom",
+            "module": "src/atoms/footer/footer.atom.ts"
           }
         }
       ]

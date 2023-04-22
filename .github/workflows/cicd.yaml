@@ -27,7 +27,11 @@ jobs:
         with:
           node-version: 19
       - run: npm ci
-      - run: npm test
+      - run: |
+          npx playwright install-deps chromium
+          npx playwright install-deps webkit
+          npx playwright install-deps firefox
+          npm test
       - run: npm run build-storybook
 
       - name: Setup Pages

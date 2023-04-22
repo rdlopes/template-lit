@@ -9,6 +9,7 @@ export default {
   concurrentBrowsers: 3,
   browsers: [
     playwrightLauncher({ product: 'chromium' }),
+    playwrightLauncher({ product: 'firefox' }),
     playwrightLauncher({ product: 'webkit' }),
   ],
 };
