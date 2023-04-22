@@ -1,5 +1,5 @@
 import {html} from 'lit';
-import {Meta, Story} from "@storybook/web-components";
+import {Meta, StoryFn} from "@storybook/web-components";
 import './main.molecule';
 import {MainMoleculeProperties} from "./main.molecule";
 
@@ -9,11 +9,11 @@ export default {
   argTypes: {}
 } as Meta;
 
-const Template: Story<MainMoleculeProperties> = ({}: MainMoleculeProperties) => html`
+const Template: StoryFn<MainMoleculeProperties> = ({}: MainMoleculeProperties) => html`
   <main-molecule></main-molecule>
 `;
 
-export const Transparent: Story<MainMoleculeProperties> = Template.bind({});
+export const Transparent: StoryFn<MainMoleculeProperties> = Template.bind({});
 Transparent.args = {};
 Transparent.parameters = {
   controls: {hideNoControlsWarning: true},

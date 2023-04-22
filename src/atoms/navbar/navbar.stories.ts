@@ -1,5 +1,5 @@
 import {html} from 'lit';
-import {Meta, Story} from "@storybook/web-components";
+import {Meta, StoryFn} from "@storybook/web-components";
 import './navbar.atom';
 import {NavbarAtomProperties} from "./navbar.atom";
 
@@ -9,11 +9,11 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<NavbarAtomProperties> = ({brand}: NavbarAtomProperties) => html`
+const Template: StoryFn<NavbarAtomProperties> = ({brand}: NavbarAtomProperties) => html`
   <navbar-atom .brand="${brand}"></navbar-atom>
 `;
 
-export const Light: Story<NavbarAtomProperties> = Template.bind({});
+export const Light: StoryFn<NavbarAtomProperties> = Template.bind({});
 Light.args = {
   brand: 'Storybook Template',
 };

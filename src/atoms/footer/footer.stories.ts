@@ -1,5 +1,5 @@
 import {html} from 'lit';
-import {Meta, Story} from "@storybook/web-components";
+import {Meta, StoryFn} from "@storybook/web-components";
 import './footer.atom';
 import {FooterAtomProperties} from "./footer.atom";
 
@@ -9,11 +9,11 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<FooterAtomProperties> = ({author, link}: FooterAtomProperties) => html`
+const Template: StoryFn<FooterAtomProperties> = ({author, link}: FooterAtomProperties) => html`
   <footer-atom .author="${author}" .link="${link}"></footer-atom>
 `;
 
-export const Light: Story<FooterAtomProperties> = Template.bind({});
+export const Light: StoryFn<FooterAtomProperties> = Template.bind({});
 Light.args = {
   author: 'A Storybook enthusiast',
 };
