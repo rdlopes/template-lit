@@ -1,3 +1,5 @@
+[![CICD](https://github.com/rdlopes/template-lit/actions/workflows/cicd.yaml/badge.svg)](https://github.com/rdlopes/template-lit/actions/workflows/cicd.yaml)
+
 # web template
 
 - `npm init -y`
