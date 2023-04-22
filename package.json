@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@web/dev-server-esbuild": "^0.3.0",
-    "@web/test-runner": "^0.15.0",
+    "@web/test-runner": "^0.16.0",
     "@web/test-runner-commands": "^0.6.0",
     "@web/test-runner-playwright": "^0.9.0",
     "@web-types/lit": "^2.0.0-3",
