@@ -1,5 +1,5 @@
 import {html} from 'lit';
-import {Meta, Story} from "@storybook/web-components";
+import {Meta, StoryFn} from "@storybook/web-components";
 import './home.page';
 import {HomePageProperties} from "./home.page";
 
@@ -9,11 +9,11 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<HomePageProperties> = ({}: HomePageProperties) => html`
+const Template: StoryFn<HomePageProperties> = ({}: HomePageProperties) => html`
   <home-page></home-page>
 `;
 
-export const Light: Story<HomePageProperties> = Template.bind({});
+export const Light: StoryFn<HomePageProperties> = Template.bind({});
 Light.args = {};
 Light.parameters = {
   controls: {hideNoControlsWarning: true},

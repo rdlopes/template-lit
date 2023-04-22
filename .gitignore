@@ -16,4 +16,7 @@
 /.tmp/
 
 # build
+vite.config.js
+/types/
 /dist/
+/storybook-static/

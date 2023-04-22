@@ -1,15 +1,12 @@
 import {setCustomElements} from '@storybook/web-components';
 import customElementsMetadata from '../custom-elements.json';
-import theme from './theme';
 import '../src/style.scss';
 
 setCustomElements(customElementsMetadata);
 
 export const parameters = {
-  // layout: 'fullscreen',
   options: {
-    showRoots: true,
-    theme
+    showRoots: true
   },
   backgrounds: {
     default: 'light'

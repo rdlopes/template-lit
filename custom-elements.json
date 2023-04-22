@@ -1,84 +1,249 @@
 {
-  "version": "experimental",
-  "tags": [
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
     {
-      "name": "footer-atom",
-      "path": "./src/atoms/footer/footer.atom.ts",
-      "attributes": [
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
         {
-          "name": "author",
-          "type": "string",
-          "default": "\"your dev\""
+          "kind": "js",
+          "name": "FooterAtom",
+          "declaration": {
+            "name": "FooterAtom",
+            "module": "./atoms/footer/footer.atom"
+          }
         },
         {
-          "name": "link",
-          "type": "string",
-          "default": "\"#\""
+          "kind": "js",
+          "name": "NavbarAtom",
+          "declaration": {
+            "name": "NavbarAtom",
+            "module": "./atoms/navbar/navbar.atom"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "MainMolecule",
+          "declaration": {
+            "name": "MainMolecule",
+            "module": "./molecules/main/main.molecule"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "HomePage",
+          "declaration": {
+            "name": "HomePage",
+            "module": "./pages/home/home.page"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/atoms/footer/footer.atom.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "FooterAtom",
+          "members": [
+            {
+              "kind": "field",
+              "name": "author",
+              "type": {
+                "text": "string"
+              },
+              "default": "'your dev'",
+              "attribute": "author"
+            },
+            {
+              "kind": "field",
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "default": "'#'",
+              "attribute": "link"
+            },
+            {
+              "kind": "method",
+              "name": "onClick",
+              "privacy": "private"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "author",
+              "type": {
+                "text": "string"
+              },
+              "default": "'your dev'",
+              "fieldName": "author"
+            },
+            {
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "default": "'#'",
+              "fieldName": "link"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "footer-atom",
+          "customElement": true
         }
       ],
-      "properties": [
+      "exports": [
         {
-          "name": "styles",
-          "type": "CSSResult",
-          "default": "\"css`\\n    :host {\\n      display: block;\\n      --icon-size: 12px;\\n      --button-font-size: 12px;\\n    }\\n\\n    #banner {\\n      display: flex;\\n      width: 100%;\\n      align-items: center;\\n      gap: 1rem;\\n    }\\n\\n    #heart {\\n      color: #B30000;\\n    }\\n  `\""
+          "kind": "js",
+          "name": "FooterAtom",
+          "declaration": {
+            "name": "FooterAtom",
+            "module": "src/atoms/footer/footer.atom.ts"
+          }
         },
         {
-          "name": "author",
-          "attribute": "author",
-          "type": "string",
-          "default": "\"your dev\""
-        },
-        {
-          "name": "link",
-          "attribute": "link",
-          "type": "string",
-          "default": "\"#\""
+          "kind": "custom-element-definition",
+          "name": "footer-atom",
+          "declaration": {
+            "name": "FooterAtom",
+            "module": "src/atoms/footer/footer.atom.ts"
+          }
         }
       ]
     },
     {
-      "name": "navbar-atom",
-      "path": "./src/atoms/navbar/navbar.atom.ts",
-      "attributes": [
+      "kind": "javascript-module",
+      "path": "src/atoms/navbar/navbar.atom.ts",
+      "declarations": [
         {
-          "name": "brand",
-          "type": "string",
-          "default": "\"App template\""
+          "kind": "class",
+          "description": "",
+          "name": "NavbarAtom",
+          "members": [
+            {
+              "kind": "field",
+              "name": "brand",
+              "type": {
+                "text": "string"
+              },
+              "default": "'App template'",
+              "attribute": "brand"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "brand",
+              "type": {
+                "text": "string"
+              },
+              "default": "'App template'",
+              "fieldName": "brand"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "navbar-atom",
+          "customElement": true
         }
       ],
-      "properties": [
+      "exports": [
         {
-          "name": "styles",
-          "type": "CSSResult",
-          "default": "\"css`\\n      :host {\\n        display: block;\\n      }\\n    `\""
+          "kind": "js",
+          "name": "NavbarAtom",
+          "declaration": {
+            "name": "NavbarAtom",
+            "module": "src/atoms/navbar/navbar.atom.ts"
+          }
         },
         {
-          "name": "brand",
-          "attribute": "brand",
-          "type": "string",
-          "default": "\"App template\""
+          "kind": "custom-element-definition",
+          "name": "navbar-atom",
+          "declaration": {
+            "name": "NavbarAtom",
+            "module": "src/atoms/navbar/navbar.atom.ts"
+          }
         }
       ]
     },
     {
-      "name": "main-molecule",
-      "path": "./src/molecules/main/main.molecule.ts",
-      "properties": [
+      "kind": "javascript-module",
+      "path": "src/pages/home/home.page.ts",
+      "declarations": [
         {
-          "name": "styles",
-          "type": "CSSResult",
-          "default": "\"css`\\n      :host {\\n        display: block;\\n      }\\n    `\""
+          "kind": "class",
+          "description": "",
+          "name": "HomePage",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "home-page",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "HomePage",
+          "declaration": {
+            "name": "HomePage",
+            "module": "src/pages/home/home.page.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "home-page",
+          "declaration": {
+            "name": "HomePage",
+            "module": "src/pages/home/home.page.ts"
+          }
         }
       ]
     },
     {
-      "name": "home-page",
-      "path": "./src/pages/home/home.page.ts",
-      "properties": [
+      "kind": "javascript-module",
+      "path": "src/molecules/main/main.molecule.ts",
+      "declarations": [
         {
-          "name": "styles",
-          "type": "CSSResult",
-          "default": "\"css`\\n    :host {\\n      flex: 1;\\n      display: flex;\\n      flex-direction: column;\\n      gap: 1rem;\\n    }\\n\\n    main {\\n      flex: 1;\\n      margin: 1rem 2rem;\\n      display: flex;\\n      justify-content: center;\\n      align-items: center;\\n    }\\n\\n    #main-content {\\n      max-width: 800px;\\n    }\\n  `\""
+          "kind": "class",
+          "description": "",
+          "name": "MainMolecule",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "main-molecule",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MainMolecule",
+          "declaration": {
+            "name": "MainMolecule",
+            "module": "src/molecules/main/main.molecule.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "main-molecule",
+          "declaration": {
+            "name": "MainMolecule",
+            "module": "src/molecules/main/main.molecule.ts"
+          }
         }
       ]
     }
