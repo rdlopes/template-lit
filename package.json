@@ -23,7 +23,7 @@
     "@babel/core": "^7.15.0",
     "@custom-elements-manifest/analyzer": "latest",
     "@esm-bundle/chai": "^4.3.4-fix.0",
-    "@open-wc/eslint-config": "^10.0.0",
+    "@open-wc/eslint-config": "^11.0.0",
     "@open-wc/testing": "^3.0.0",
     "@storybook/addon-actions": "^7.0.6",
     "@storybook/addon-essentials": "^7.0.6",
