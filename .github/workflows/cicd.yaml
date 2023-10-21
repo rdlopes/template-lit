@@ -28,7 +28,7 @@ jobs:
           node-version: 19
       - run: npm ci
       - run: |
-          npm build
+          npm run build
           npx playwright install
           npm test
       - run: npm run build-storybook
