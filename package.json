@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lit": "^2.6.1",
+    "lit": "^3.0.0",
     "sass": "^1.38.0",
     "weightless": "0.0.37"
   },
