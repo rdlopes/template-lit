@@ -30,6 +30,9 @@ jobs:
       - run: |
           npm run build
           npx playwright install
+          npx playwright install-deps chromium
+          npx playwright install-deps webkit
+          npx playwright install-deps firefox
           npm test
       - run: npm run build-storybook
 
