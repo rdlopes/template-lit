@@ -28,9 +28,8 @@ jobs:
           node-version: 19
       - run: npm ci
       - run: |
-          npx playwright install-deps chromium
-          npx playwright install-deps webkit
-          npx playwright install-deps firefox
+          npm build
+          npx playwright install
           npm test
       - run: npm run build-storybook
 

@@ -1,15 +1,17 @@
-import { playwrightLauncher } from '@web/test-runner-playwright';
-import { esbuildPlugin }      from "@web/dev-server-esbuild";
+import {playwrightLauncher} from '@web/test-runner-playwright';
+import {esbuildPlugin} from "@web/dev-server-esbuild";
 
 export default {
-  plugins: [esbuildPlugin({ ts: true, target: 'auto' })],
+  plugins: [esbuildPlugin({ts: true, target: 'auto'})],
   files: 'src/**/*.test.ts',
-  nodeResolve: true,
+  nodeResolve: {
+    exportConditions: ['production']
+  },
   coverage: true,
   concurrentBrowsers: 3,
   browsers: [
-    playwrightLauncher({ product: 'chromium' }),
-    playwrightLauncher({ product: 'firefox' }),
-    playwrightLauncher({ product: 'webkit' }),
+    playwrightLauncher({product: 'chromium'}),
+    playwrightLauncher({product: 'firefox'}),
+    playwrightLauncher({product: 'webkit'}),
   ],
 };

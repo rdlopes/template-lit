@@ -31,11 +31,17 @@ export class FooterAtom extends LitElement implements FooterAtomProperties {
     }
   `
 
-  @property({type: String})
-  author: string = 'your dev'
+  @property()
+  declare author: string;
 
-  @property({type: String})
-  link: string = '#'
+  @property()
+  declare link: string;
+
+  constructor() {
+    super();
+    this.author = 'your dev';
+    this.link = '#';
+  }
 
   render() {
     return html`
