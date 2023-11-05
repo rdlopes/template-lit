@@ -2,7 +2,10 @@ import {playwrightLauncher} from '@web/test-runner-playwright';
 import {esbuildPlugin} from "@web/dev-server-esbuild";
 
 export default {
-  plugins: [esbuildPlugin({ts: true, target: 'auto'})],
+  plugins: [esbuildPlugin({
+    ts: true,
+    tsconfig: './tsconfig.json'
+  })],
   files: 'src/**/*.test.ts',
   nodeResolve: {
     exportConditions: ['production']
