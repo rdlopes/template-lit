@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^12.0.0",
-    "@open-wc/testing": "^3.0.0",
+    "@open-wc/testing": "^4.0.0",
     "@storybook/addon-actions": "^7.5.1",
     "@storybook/addon-essentials": "^7.5.1",
     "@storybook/addon-links": "^7.5.1",
