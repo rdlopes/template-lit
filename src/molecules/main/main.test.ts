@@ -1,7 +1,7 @@
-import {expect, fixture, html} from '@open-wc/testing';
+import { expect, fixture, html } from '@open-wc/testing';
 
-import {MainMolecule} from "./main.molecule";
-import './main.molecule';
+import { MainMolecule } from './main.molecule';
+import { beforeEach, describe } from 'node:test';
 
 describe('Main', async () => {
   let element: MainMolecule;
@@ -12,7 +12,10 @@ describe('Main', async () => {
   });
 
   it('passes the a11y audit', async () => {
-    await expect(element).shadowDom.to.be.accessible();
+    await expect(element)
+      .shadowDom
+      .to
+      .be
+      .accessible();
   });
-
 });

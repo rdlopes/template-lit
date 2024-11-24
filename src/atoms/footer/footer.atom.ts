@@ -1,8 +1,8 @@
-import {css, html, LitElement} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
-import "weightless/banner"
-import "weightless/button"
-import "weightless/icon"
+import { css, html, LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import 'weightless/banner';
+import 'weightless/button';
+import 'weightless/icon';
 
 export interface FooterAtomProperties {
   author: string;
@@ -11,7 +11,6 @@ export interface FooterAtomProperties {
 
 @customElement('footer-atom')
 export class FooterAtom extends LitElement implements FooterAtomProperties {
-
   static styles = css`
     :host {
       display: block;
@@ -29,7 +28,7 @@ export class FooterAtom extends LitElement implements FooterAtomProperties {
     #heart {
       color: #B30000;
     }
-  `
+  `;
 
   @property()
   declare author: string;
@@ -56,7 +55,7 @@ export class FooterAtom extends LitElement implements FooterAtomProperties {
           <code>by ${this.author} */</code>
         </wl-button>
       </wl-banner>
-    `
+    `;
   }
 
   private onClick() {
@@ -64,7 +63,6 @@ export class FooterAtom extends LitElement implements FooterAtomProperties {
       window.location.href = this.link;
     }
   }
-
 }
 
 declare global {

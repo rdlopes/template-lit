@@ -2,6 +2,7 @@ import {expect, fixture, html} from '@open-wc/testing';
 
 import {HomePage} from "./home.page";
 import './home.page';
+import { beforeEach, describe } from 'node:test';
 
 describe('Home', async () => {
   let element: HomePage;

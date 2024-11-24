@@ -1,7 +1,7 @@
-import {html} from 'lit';
-import {Meta, StoryFn} from "@storybook/web-components";
+import { html } from 'lit';
+import { Meta, StoryFn } from '@storybook/web-components';
 import './footer.atom';
-import {FooterAtomProperties} from "./footer.atom";
+import { FooterAtomProperties } from './footer.atom';
 
 export default {
   title: 'Atoms / Footer',
@@ -9,7 +9,10 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: StoryFn<FooterAtomProperties> = ({author, link}: FooterAtomProperties) => html`
+const Template: StoryFn<FooterAtomProperties> = ({
+  author,
+  link,
+}: FooterAtomProperties) => html`
   <footer-atom .author="${author}" .link="${link}"></footer-atom>
 `;
 
