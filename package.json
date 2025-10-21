@@ -30,7 +30,7 @@
     "@storybook/theming": "^7.5.1",
     "@storybook/web-components": "^7.5.1",
     "@storybook/web-components-vite": "^7.5.1",
-    "@types/node": "^20.0.0",
+    "@types/node": "^22.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@web-types/lit": "^2.0.0-3",
